@@ -1,0 +1,242 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* 메인 콘텐츠 레이아웃 */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* 게시글 작성 폼 (왼쪽) */
+.post-form {
+    background-color: #fff;
+    padding: 20px;
+    width: 48%; /* 50%에서 여백을 고려해 약간 줄여서 설정 */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.post-form input, .post-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.post-form button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.post-form button:hover {
+    background-color: #2980b9;
+}
+
+/* 게시글 목록 (오른쪽) */
+.post-list {
+    background-color: #fff;
+    padding: 20px;
+    width: 48%; /* 50%에서 여백을 고려해 약간 줄여서 설정 */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-list h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.post p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+/* 댓글 스타일 */
+.post {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.post p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.post a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* 댓글 작성 폼 */
+.comment-form {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    resize: vertical;
+}
+
+.comment-form button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #2980b9;
+}
+
+/* 댓글 목록 */
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.comment-list li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-list li .comment-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.comment-list li .comment-header .comment-author {
+    font-weight: bold;
+}
+
+.comment-list li .comment-header .comment-time {
+    font-style: italic;
+    color: #aaa;
+}
+
+.comment-list li .comment-content {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+    word-wrap: break-word;
+}
+
+.post a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* 링크 스타일 */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

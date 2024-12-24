@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커뮤니티</title>
+    <link rel="stylesheet" href="static/board.css">
+</head>
+<body>  
+    <!-- 헤더 -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>학교 커뮤니티</h1>
+            </div>
+            <div class="nav-links">
+                <a href="/">메인 페이지로 돌아가기</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 게시글 작성 및 목록 레이아웃 -->
+    <main class="main-content">
+        <!-- 게시글 작성 폼 (왼쪽) -->
+        <section class="post-form">
+            <h2>게시글 작성</h2>
+            <form action="/board" method="post">
+                <label for="title">제목:</label><br>
+                <input type="text" id="title" name="title" required><br><br>
+                <label for="content">내용:</label><br>
+                <textarea id="content" name="content" rows="5" cols="30" required></textarea><br><br>
+                <button type="submit">올리기</button>
+            </form>
+        </section>
+
+        <!-- 게시글 목록 (오른쪽) -->
+        <section class="post-list">
+            <h2>게시글 목록</h2>
+            {% for post in posts %}
+                <div class="post">
+                    <h3>{{ post['title'] }}</h3>
+                    <p>{{ post['content'] }}</p>
+                    
+                    <!-- 댓글 작성 폼 -->
+                    <form action="/comment/{{ post['id'] }}" method="post">
+                        <textarea name="comment" rows="3" cols="30" placeholder="댓글을 작성하세요..."></textarea><br>
+                        <button type="submit">댓글 달기</button>
+                    </form>
+
+                    <!-- 댓글 목록 -->
+                    <ul>
+                        {% for comment in post['comments'] %}
+                            <li>{{ comment['content'] }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    <hr>
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+</html>

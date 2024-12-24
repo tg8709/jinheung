@@ -1,0 +1,80 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: #444;
+}
+header {
+    background: linear-gradient(135deg, #000000, #000000);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid #000000;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+main {
+    margin: 20px auto;
+    max-width: 800px;
+}
+.floor {
+    background: white;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.floor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.floor h2 {
+    color: #000000;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #f6f6f6;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+.classroom-card {
+    display: inline-block;
+    
+    background: #f1f8ff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+.classroom-card:hover {
+    transform: scale(1.0);
+}
+.classroom-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #000000;
+}
+.classroom-card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #000000;
+}
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+a:hover {
+    background-color: #1d6fa5;
+}

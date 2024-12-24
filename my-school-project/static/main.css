@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* 연한 회색 배경 */
+    color: #333; /* 어두운 글씨 색상 */
+}
+
+header {
+    background-color: #000; /* 검정색 헤더 */
+    color: #fff; /* 흰색 글씨 */
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff; /* 흰색 링크 */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* 링크 호버 효과 */
+}
+
+main {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.welcome {
+    background-color: #fff; /* 흰색 배경의 환영 섹션 */
+    padding: 30px;
+    border-radius: 8px; /* 부드러운 모서리 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 미세한 그림자 */
+    margin: 20px auto; /* 중앙 정렬 */
+    max-width: 800px; /* 최대 너비 설정 */
+}
+
+.school-image {
+    width: 100%; /* 반응형 이미지 */
+    height: auto; /* 비율 유지 */
+    border-radius: 8px; /* 부드러운 모서리 */
+}
+
+footer {
+    background-color: #000; /* 검정색 푸터 */
+    color: #fff; /* 흰색 글씨 */
+    text-align: center;
+    padding: 10px;
+    position: relative; /* 푸터 위치 설정 */
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
